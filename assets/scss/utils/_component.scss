@@ -1,0 +1,10 @@
+.cusBtn {
+    background-color: $accent-200;
+    color: #fff;
+    border-radius: 100px;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-300;
+    }
+}

@@ -1,4 +1,43 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar {
+  // input {
+  //   line-height: 1.75;
+  //   letter-spacing: 0.05em;
+  //   font-weight: 700;
+
+  //   &::placeholder {
+  //     vertical-align: bottom;
+  //   }
+  // }
+  .input-group {
+    max-width: 276px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+    }
+
+    .search-text {
+      color: $neutral-300
+    }
+
+    &:focus-within {
+      .search-text {
+        color: $neutral-500;
+      }
+    }
+
+    i {
+      vertical-align: bottom;
+      line-height: 1;
+    }
+
+    input {
+      line-height: 1.5;
+    }
+  }
 }
+
+// .navbar-nav{
+//   .nav-link{
+
+//   }
+// }

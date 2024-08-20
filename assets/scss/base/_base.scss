@@ -1,0 +1,29 @@
+// *,
+// *::after,
+// *::before {
+//     outline: 1px solid black;
+// }
+
+body {
+    background-color: $primary;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.1em;
+}
+
+p {
+    letter-spacing: 0.05em;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+    vertical-align: bottom;
+}
