@@ -1,3 +1,141 @@
-.index-title {
-  font-size: 100px;
+// banner
+.banner {
+  // .banner-text {
+  //   bottom: 50%;
+  //   left: 0;
+  //   transform: translateY(50%);
+
+  //   @include media-breakpoint-down(md) {
+  //     bottom: 0%;
+  //     text-align: center;
+  //   }
+
+  //   @include media-breakpoint-down(sm) {
+  //     transform: translateY(100%);
+  //   }
+  // }
+  .banner-wrapper {
+    background-image: url(../images/banner.png);
+    height: 620px;
+
+    @include media-breakpoint-down(sm) {
+      background-image: url(../images/banner-sm.png);
+      height: 550px;
+
+      text-align: center;
+      padding-bottom: 48px;
+    }
+  }
+}
+
+
+// subject
+$subjects: 8;
+
+.subject {
+  .subjectCard {
+    height: 200px;
+    width: 100%;
+    transition: 0.3s;
+
+    @include media-breakpoint-down (sm) {
+      height: 84px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+
+  // .cardImg1 {
+  //   background-image: url(../images/theme-1.png);
+
+  //   @include media-breakpoint-down (sm) {
+  //     background-image: url(../images/theme-1-sm.png);
+  //   }
+  // }
+
+  @for $i from 1 through $subjects {
+    .subjectImg#{$i} {
+      background-image: url("../images/theme-#{$i}.png");
+
+      @include media-breakpoint-down (sm) {
+        background-image: url("../images/theme-#{$i}-sm.png");
+      }
+    }
+
+  }
+}
+
+// activity
+.activity {
+  h4 {
+    @include media-breakpoint-down (md) {
+      color: $accent-200;
+      font-weight: 700;
+    }
+  }
+
+  >.container::before {
+    content: '';
+    background-image: url("../images/bg-1.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 217px;
+    height: 81px;
+    position: absolute;
+    bottom: -8px;
+    left: 12px;
+
+    @include media-breakpoint-down (md) {
+      display: none;
+    }
+  }
+
+  >.container::after {
+    content: '';
+    background-image: url("../images/bg-2.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 300px;
+    height: 196px;
+    position: absolute;
+    bottom: -8px;
+    right: -20px;
+
+    @include media-breakpoint-down (md) {
+      background-image: url("../images/bg-2-sm.png");
+      width: 160px;
+      height: 104px;
+      right: -48px;
+    }
+  }
+}
+
+// life
+.life {
+  .lifeCard-title {
+    font-size: 52px;
+  }
+}
+
+// subscribe
+.subscribe {
+  li:first-child {
+    padding-top: 80px;
+  }
+
+  li:nth-child(4) {
+    margin-top: -80px;
+  }
+}
+
+.subscribeCard {
+  .subscribeTag {
+    border: 1px solid $accent;
+    padding: 8px 12px;
+    top: -16px;
+    left: 16px;
+  }
 }

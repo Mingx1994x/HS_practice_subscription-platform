@@ -1,10 +1,21 @@
-.cusBtn {
+.cus-linkBtn {
     background-color: $accent-200;
     color: #fff;
     border-radius: 100px;
+    line-height: 1.2;
+    padding: 16px 24px;
+    // display: flex;
+    // align-items: center;
 
     &:hover,
     &:focus {
         background-color: $accent-300;
+        color: #fff
     }
+}
+
+
+.subjectCard {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

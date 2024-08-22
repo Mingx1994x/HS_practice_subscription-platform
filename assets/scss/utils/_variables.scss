@@ -438,6 +438,8 @@ $spacers: (
   c4:$spacer * 2,
   c5:$spacer * 2.25,
   c6:$spacer * 2.5,
+  c7:$spacer * 3.75,
+  c8:$spacer * 5,
   ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -505,6 +507,8 @@ $paragraph-margin-bottom: 0 !default; //custom-revise 1rem !default;
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
+  // custom 375px
+  sm-min:375px,
   sm: 576px,
   md: 768px,
   lg: 992px,

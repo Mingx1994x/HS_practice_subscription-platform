@@ -9,9 +9,351 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <!-- <h1 class="index-title">bootstrap環境部署測試</h1> -->
-
-    <!-- <%- include('./layout/footer'); -%> -->
+    <!-- banner1 : img & 絕對定位 -->
+    <!-- <div class="banner py-lg-c8 py-0">
+        <picture class="position-relative">
+          <source
+            srcset="../assets/images/banner-sm.png"
+            media="(max-width: 375px)"
+          />
+          <img
+            src="../assets/images/banner.png"
+            alt="banner"
+            class="img-fluid"
+          />
+          <div class="banner-text position-absolute w-100">
+            <div class="ms-0 ms-md-c7">
+              <h5 class="fs-6 fs-md-5 text-white mb-2 mb-md-c2">
+                獻給新世代的生活風格誌
+              </h5>
+              <h2 class="fs-3 fs-md-1 text-white mb-c3 mb-md-4">
+                一起探索生活的無限可能
+              </h2>
+              <a href="#" class="btn cus-linkBtn">馬上訂閱</a>
+            </div>
+          </div>
+        </picture>
+      </div> -->
+    <!-- banner2 : bg-image-->
+    <div class="banner">
+      <div class="container py-0 py-lg-c8">
+        <div
+          class="banner-wrapper bg-cover d-flex flex-column justify-content-end justify-content-sm-center"
+        >
+          <div class="banner-text">
+            <div class="ms-0 ms-sm-c7">
+              <h5 class="fs-6 fs-md-5 text-white mb-2 mb-md-c2">
+                獻給新世代的生活風格誌
+              </h5>
+              <h2 class="fs-3 fs-md-1 text-white mb-c3 mb-md-4">
+                一起探索生活的無限可能
+              </h2>
+              <a href="#" class="btn cus-linkBtn">馬上訂閱</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- subject -->
+    <section class="subject">
+      <div class="container py-5 py-lg-c8 position-relative overflow-y-hidden">
+        <h2 class="fs-4 fs-md-2 mb-4">熱門主題</h2>
+        <div class="row gy-2 gy-md-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="subjectCard subjectImg1 bg-cover position-relative">
+              <p
+                class="fs-6 fs-md-5 text-white position-absolute top-50 start-50 translate-middle"
+              >
+                城市漫遊者
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="subjectCard subjectImg2 bg-cover position-relative">
+              <p
+                class="fs-6 fs-md-5 text-white position-absolute top-50 start-50 translate-middle"
+              >
+                秘境尋蹤人
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="subjectCard subjectImg3 bg-cover position-relative">
+              <p
+                class="fs-6 fs-md-5 text-white position-absolute top-50 start-50 translate-middle"
+              >
+                品味設計家
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="subjectCard subjectImg4 bg-cover position-relative">
+              <p
+                class="fs-6 fs-md-5 text-white position-absolute top-50 start-50 translate-middle"
+              >
+                美食探險記
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="subjectCard subjectImg5 bg-cover position-relative">
+              <p
+                class="fs-6 fs-md-5 text-white position-absolute top-50 start-50 translate-middle"
+              >
+                美學建築誌
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="subjectCard subjectImg6 bg-cover position-relative">
+              <p
+                class="fs-6 fs-md-5 text-white position-absolute top-50 start-50 translate-middle"
+              >
+                慢活生活行
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="subjectCard subjectImg7 bg-cover position-relative">
+              <p
+                class="fs-6 fs-md-5 text-white position-absolute top-50 start-50 translate-middle"
+              >
+                工藝匠心賞
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="subjectCard subjectImg8 bg-cover position-relative">
+              <p
+                class="fs-6 fs-md-5 text-white position-absolute top-50 start-50 translate-middle"
+              >
+                時尚先鋒派
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- activity -->
+    <section class="activity bg-primary-200">
+      <div class="container position-relative overflow-hidden py-5 py-lg-c8">
+        <div class="d-flex flex-column align-items-center">
+          <div class="text-center mb-4 mb-md-c3">
+            <h4 class="fs-6 fs-md-4 mb-c2 mb-md-c3">\ 母親節強檔活動 /</h4>
+            <h2 class="fs-4 fs-md-2">家庭訂閱方案限時 7 折</h2>
+          </div>
+          <ul
+            class="list-unstyled text-neutral-400 mb-4 mb-md-c6 d-flex flex-column gy-3"
+          >
+            <li class="mb-3">每月最新文章無限閱讀</li>
+            <li class="mb-3">專屬會員限定內容</li>
+            <li class="mb-3">定期電子報</li>
+            <li class="mb-3">年度精選禮物</li>
+            <li class="mb-3">24 /7 優先客戶服務</li>
+            <li>為每個成員量身打造專屬行程</li>
+          </ul>
+          <div>
+            <a href="#" class="btn cus-linkBtn">我想了解</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- life -->
+    <section class="life">
+      <div class="container py-5 py-lg-c8">
+        <h2 class="fs-4 fs-md-2 mb-4">品味生活</h2>
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h3 class="lifeCard-title text-primary-400">食.</h3>
+            <div class="card border-0 bg-transparent">
+              <img
+                src="../assets/images/life-1.png"
+                class="card-img-top"
+                alt="life-eating"
+              />
+              <div class="card-body my-4 my-md-c5 p-0">
+                <p class="fs-6 fs-md-5 fw-bold mb-c3">
+                  ｜米其林三星主廚的那些絕活傳奇
+                </p>
+                <p class="fs-6 fs-md-5 fw-bold mb-c3">
+                  ｜探秘成都的地道川味秘技與魅力
+                </p>
+                <p class="fs-6 fs-md-5 fw-bold">
+                  ｜義大利釀酒師對於酒的堅持執著
+                </p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="link-accent-200 fs-6 fs-md-5 lh-sm p-2"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="lifeCard-title text-primary-400">藝.</h3>
+            <div class="card border-0 bg-transparent">
+              <img
+                src="../assets/images/life-2.png"
+                class="card-img-top"
+                alt="life-art"
+              />
+              <div class="card-body my-4 my-md-c5 p-0">
+                <p class="fs-6 fs-md-5 fw-bold mb-c3">
+                  ｜解構教主級時裝設計大師的獨特美學
+                </p>
+                <p class="fs-6 fs-md-5 fw-bold mb-c3">
+                  ｜當代攝影師鏡頭中的光影離奇
+                </p>
+                <p class="fs-6 fs-md-5 fw-bold">
+                  ｜帶你穿縮中世紀，夏季文藝復興展
+                </p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="link-accent-200 fs-6 fs-md-5 lh-sm p-2"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="lifeCard-title text-primary-400">旅.</h3>
+            <div class="card border-0 bg-transparent">
+              <img
+                src="../assets/images/life-3.png"
+                class="card-img-top"
+                alt="life-travel"
+              />
+              <div class="card-body my-4 my-md-c5 p-0">
+                <p class="fs-6 fs-md-5 fw-bold mb-c3">
+                  ｜遠離喧囂,偶探巴塔哥尼亞終界
+                </p>
+                <p class="fs-6 fs-md-5 fw-bold mb-c3">
+                  ｜東京深度六區,帶你細品極簡魅力
+                </p>
+                <p class="fs-6 fs-md-5 fw-bold">｜專賣奇珍異寶的東歐地下夜市</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="link-accent-200 fs-6 fs-md-5 lh-sm p-2"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe -->
+    <section class="subscribe bg-primary-200">
+      <div class="container py-5 py-lg-c8">
+        <div class="row d-flex align-items-center">
+          <div
+            class="col-lg-6 col-12 d-flex flex-column align-items-lg-start align-items-center"
+          >
+            <h5 class="text-neutral-400 fs-6 fs-lg-5 mb-3">
+              今天又不知道要去哪裡了嗎？
+            </h5>
+            <div class="d-flex flex-column flex-xl-row mb-4 mb-md-c5">
+              <h2 class="text-center text-lg-start fs-4 fs-md-2 mb-2 mb-xl-0">
+                Vivre
+              </h2>
+              <h2 class="fs-4 fs-lg-2">給你意想不到生活風格提案</h2>
+            </div>
+            <div>
+              <a href="#" class="btn cus-linkBtn">馬上訂閱</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <ul class="row row-gap-c6">
+              <li class="col-6 d-none d-lg-flex">
+                <div
+                  class="subscribeCard bg-cover position-relative d-flex align-items-end px-c2"
+                  style="
+                    background-image: url(../assets/images/projects-2.png);
+                    width: 306px;
+                    height: 236px;
+                  "
+                >
+                  <p
+                    class="subscribeTag text-accent-300 bg-white position-absolute"
+                  >
+                    <span class="me-2">▶</span>人氣行程
+                  </p>
+                  <p class="fw-bold text-primary">親子露營要帶什麼？</p>
+                </div>
+              </li>
+              <li class="col-6 d-none d-lg-flex">
+                <div
+                  class="subscribeCard bg-cover position-relative d-flex align-items-end px-c2"
+                  style="
+                    background-image: url(../assets/images/projects-1.png);
+                    width: 306px;
+                    height: 236px;
+                  "
+                >
+                  <p
+                    class="subscribeTag text-accent-300 bg-white position-absolute"
+                  >
+                    <span class="me-2">▶</span>編輯推薦
+                  </p>
+                  <p class="fw-bold text-primary">山女孩的健行筆記</p>
+                </div>
+              </li>
+              <li class="col-6 d-none d-lg-flex">
+                <div
+                  class="subscribeCard bg-cover position-relative d-flex align-items-end px-c2"
+                  style="
+                    background-image: url(../assets/images/projects-5.png);
+                    width: 306px;
+                    height: 236px;
+                  "
+                >
+                  <p
+                    class="subscribeTag text-accent-300 bg-white position-absolute"
+                  >
+                    <span class="me-2">▶</span>編輯推薦
+                  </p>
+                  <p class="fw-bold text-primary">質感房間改造攻略！</p>
+                </div>
+              </li>
+              <li class="col-6 d-none d-lg-flex">
+                <div
+                  class="subscribeCard bg-cover position-relative d-flex align-items-end px-c2"
+                  style="
+                    background-image: url(../assets/images/projects-3.png);
+                    width: 306px;
+                    height: 236px;
+                  "
+                >
+                  <p
+                    class="subscribeTag text-accent-300 bg-white position-absolute"
+                  >
+                    <span class="me-2">▶</span>熱門文章
+                  </p>
+                  <p class="fw-bold text-primary">適合溜小孩的海邊景點推薦</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <div class="container py-5 py-lg-c8">
+      <div
+        class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-between"
+      >
+        <h2 class="fs-4 fs-md-2 mb-3">想看什麼主題由你決定！</h2>
+        <div class="d-flex flex-column">
+          <p class="fs-5 fs-md-4 fw-bold mb-c5 mb-md-3">歡迎投稿與我們分享</p>
+          <a
+            href="mailto:#"
+            class="btn cus-linkBtn align-self-center align-self-md-end"
+            >聯絡我們</a
+          >
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>
