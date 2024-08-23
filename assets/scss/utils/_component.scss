@@ -1,3 +1,4 @@
+// button
 .cus-linkBtn {
     background-color: $accent-200;
     color: #fff;
@@ -14,8 +15,38 @@
     }
 }
 
-
+// card
 .subjectCard {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+// swiper navigation
+.navigationBtn {
+    border: 1px solid $neutral-400;
+    border-radius: 100px;
+    background-color: transparent;
+    color: $neutral-400;
+    padding: 4px 16px;
+
+    // font-size: 24px;
+    i {
+        vertical-align: -.2em;
+    }
+
+    &:hover {
+        background-color: $neutral-500;
+        color: $neutral;
+        cursor: pointer;
+    }
+}
+
+.navigationBtn-line::after {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    background-color: $neutral-400;
+    margin-right: 20px;
+    margin-left: 20px;
 }

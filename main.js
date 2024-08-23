@@ -10,4 +10,4 @@ import 'swiper/css/pagination';
 // swiper js
 import "./assets/js/swiper";
 
-console.log("Hello world!");
+// console.log("Hello world!");

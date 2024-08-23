@@ -1,4 +1,16 @@
 .navbar {
+  h1 {
+    >a {
+      display: block;
+      width: 95px;
+      height: 27px;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+  }
+
   .input-group {
     max-width: 276px;
 

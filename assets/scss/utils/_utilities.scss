@@ -4,3 +4,16 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+// active-btn
+.tabBtn.active {
+    background-color: $accent;
+}
+
+// container
+.container-full {
+    @include media-breakpoint-down (sm) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
