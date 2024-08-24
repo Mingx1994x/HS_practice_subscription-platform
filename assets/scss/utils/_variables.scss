@@ -435,11 +435,14 @@ $spacers: (
   //custom
   c2:$spacer * 0.75,
   c3:$spacer * 1.25,
+  c4-sm:$spacer * 1.75,
   c4:$spacer * 2,
   c5:$spacer * 2.25,
   c6:$spacer * 2.5,
   c7:$spacer * 3.75,
+  c8-sm:$spacer * 4.5,
   c8:$spacer * 5,
+  c9:$spacer * 6.25,
   ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -672,8 +675,10 @@ $font-weight-bolder: bolder !default;
 $font-weight-base: $font-weight-semibold !default; //custom revise $font-weight-normal !default;
 
 $line-height-base: 1.5 !default;
-$line-height-sm: 1.25 !default;
+// $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
+// custom revise
+$line-height-sm: 1.2 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;

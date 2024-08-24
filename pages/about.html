@@ -8,94 +8,361 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>環境部署測試Swiper</h1>
-    <div class="swiper customSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="card" style="width: 18rem">
-            <img
-              src="../assets/images/cat.jpg"
-              class="card-img-top"
-              alt="cat"
-            />
-            <div class="card-body">
-              <h5 class="card-title">swiper1</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                odit, iusto odio assumenda alias id nobis earum!
-              </p>
+
+    <div class="banner">
+      <div class="container container-full">
+        <picture>
+          <source
+            srcset="../assets/images/about-banner-sm.png"
+            media="(max-width: 375px)"
+          />
+          <img
+            src="../assets/images/about-banner.png"
+            alt="article-banner"
+            class="img-fluid"
+          />
+        </picture>
+      </div>
+    </div>
+    <!-- about content -->
+    <main class="pt-4 pb-c6 py-lg-c8">
+      <div class="container">
+        <div class="mb-c6 mb-lg-c8">
+          <p class="text-neutral-400 py-c2 mb-1 mb-lg-4">
+            首頁 /
+            <span class="text-accent-200">關於我們</span>
+          </p>
+          <h2 class="fs-4 fs-lg-1 text-neutral-500">關於我們</h2>
+        </div>
+        <div class="row d-flex flex-column flex-lg-row g-4 mb-lg-c7">
+          <div class="col-lg-6 container-full">
+            <div class="d-flex flex-column align-items-center">
+              <picture>
+                <source
+                  srcset="../assets/images/about-1-sm.png"
+                  media="(max-width: 375px)"
+                />
+                <img
+                  src="../assets/images/about-1.png"
+                  alt="about-1"
+                  class="img-fluid"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="px-c2 px-lg-c6">
+              <div class="mb-3 mb-lg-c5">
+                <h3 class="text-neutral-600 fs-4 fs-lg-2 mb-c2">Vivre</h3>
+                <p class="text-neutral-400">
+                  vivre
+                  這個品牌名稱源自法語,意為"生活"、"活著"。它象徵著我們對於高品質生活的熱愛與追求。vivre
+                  旨在成為一個分享美好生活體驗、發掘生活質感的平台。
+                </p>
+              </div>
+              <p class="text-neutral-600 fw-bold mb-c2">我們的品牌價值</p>
+              <ul class="text-neutral-400">
+                <li class="mb-2">熱愛生活,好奇心永存</li>
+                <li class="mb-2">品味獨具,講究生活質感</li>
+                <li class="mb-2">分享真實生活,啟發生活靈感</li>
+                <li>推廣慢生活哲學,注重內在修為</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="card" style="width: 18rem">
-            <img
-              src="../assets/images/cat.jpg"
-              class="card-img-top"
-              alt="cat"
-            />
-            <div class="card-body">
-              <h5 class="card-title">swiper2</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                odit, iusto odio assumenda alias id nobis earum!
-              </p>
+        <div class="row d-flex flex-column flex-lg-row-reverse g-4">
+          <div class="col-lg-6 container-full">
+            <div class="d-flex flex-column align-items-center">
+              <picture>
+                <source
+                  srcset="../assets/images/about-2-sm.png"
+                  media="(max-width: 375px)"
+                />
+                <img
+                  src="../assets/images/about-2.png"
+                  alt="about-1"
+                  class="img-fluid"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="px-c2 px-lg-c6">
+              <div class="mb-3 mb-lg-c5">
+                <h3 class="text-neutral-600 fs-4 fs-lg-2 mb-3 mb-lg-C5">
+                  風格特色
+                </h3>
+                <p class="text-neutral-400 mb-3 mb-lg-C5">
+                  vivre
+                  所展現的風格特色,可以用知性、親和、用心、優雅與獨特這些詞語來概括。我們講求內容的原創性與探索精神,不跟風追隨潮流話題,而是真誠分享獨特的生活視角與體驗。無論是旅行、美食、居家、時尚等生活領域,我們都希望能夠呈現出與眾不同、縝密入微、內外兼具的見解,給讀者帶來嶄新的感受和啟迪。
+                </p>
+                <p class="text-neutral-400">
+                  無論您是對美食、旅行、居家生活還是時尚風尚有獨到的見解和體會,只要切合vivre的價值理念與風格調性,我們都熱烈歡迎您加入這個平台,與我們一起分享和交流生活的點點滴滴。
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="card" style="width: 18rem">
-            <img
-              src="../assets/images/cat.jpg"
-              class="card-img-top"
-              alt="cat"
-            />
-            <div class="card-body">
-              <h5 class="card-title">swiper3</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                odit, iusto odio assumenda alias id nobis earum!
-              </p>
+      </div>
+    </main>
+    <!-- history -->
+    <section class="bg-primary-200 py-c6 py-lg-c8">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="ps-lg-c6">
+              <h3 class="text-neutral-500 fs-4 fs-lg-2 mb-4">大事記</h3>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="pe-lg-c6">
+              <!-- 2020 -->
+              <div class="d-flex flex-column flex-lg-row mb-c8 px-c2 px-lg-0">
+                <p
+                  class="bg-primary-400 text-neutral align-self-start lh-sm fs-6 fs-lg-4 p-c2 me-c8-sm mb-4"
+                >
+                  2020
+                </p>
+                <ul class="d-flex flex-column list-unstyled">
+                  <!-- 5月 -->
+                  <li class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        5&nbsp;&nbsp;月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        創辦人茱麗葉、亞歷山大和幾個好友在巴黎開設 vivre
+                        生活部落格,紀錄分享他們對美好生活的想法和體驗。
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="d-flex">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        10月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        部落格內容和讀者人數逐漸累積,決定成立 vivre
+                        品牌,開發更多元豐富的內容。
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 2021 -->
+              <div class="d-flex flex-column flex-lg-row mb-c8 px-c2 px-lg-0">
+                <p
+                  class="bg-primary-400 text-neutral align-self-start lh-sm fs-6 fs-lg-4 p-c2 me-c8-sm mb-4"
+                >
+                  2021
+                </p>
+                <ul class="d-flex flex-column list-unstyled">
+                  <li class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        3&nbsp;&nbsp;月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        vivre網站正式上線,除了原創文字內容,還加上了視訊、音訊等多媒體形式。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        7&nbsp;&nbsp;月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        與法國本土品牌合作,推出 vivre
+                        首個自有產品線,包括家飾、餐飲用品等生活品味商品。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        12月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        總瀏覽人次突破 100 萬大關,獲得實體出版社青睞,出版 vivre
+                        生活風格書籍。
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 2022 -->
+              <div class="d-flex flex-column flex-lg-row mb-c8 px-c2 px-lg-0">
+                <p
+                  class="bg-primary-400 text-neutral align-self-start lh-sm fs-6 fs-lg-4 p-c2 me-c8-sm mb-4"
+                >
+                  2022
+                </p>
+                <ul class="d-flex flex-column list-unstyled">
+                  <li class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        3&nbsp;&nbsp;月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        推出 vivre
+                        生活風格線上課程,聘請各領域專家開設有深度的付費課程。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        8&nbsp;&nbsp;月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        vivre 舉辦首屆 vivre
+                        生活節,線上線下同步展開,現場湧入大批品牌粉絲朋友。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        10月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        vivre 完成 A 輪融資,獲得知名風投資金青睞。
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 2023 -->
+              <div class="d-flex flex-column flex-lg-row px-c2 px-lg-0">
+                <p
+                  class="bg-primary-400 text-neutral align-self-start lh-sm fs-6 fs-lg-4 p-c2 me-c8-sm mb-4"
+                >
+                  2023
+                </p>
+                <ul class="d-flex flex-column list-unstyled">
+                  <li class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        1&nbsp;&nbsp;月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        vivre
+                        宣布品牌願景"探索更美好的生活",並推出全新視覺形象。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        5&nbsp;&nbsp;月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        正式推出付費訂閱會員服務,提供高階獨家內容和會員優惠。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        9&nbsp;&nbsp;月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        首次評選年度" vivre
+                        生活風格大獎",表彰在各領域具有開創性的人物及品牌。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <div class="flex-shrink-0">
+                      <p class="history-time text-neutral-400 fw-bold pe-3">
+                        11月
+                      </p>
+                    </div>
+                    <div class="flex-grow-1">
+                      <p
+                        class="history-content text-neutral-600 border-start border-1 border-neutral-300 ps-3"
+                      >
+                        首次登場的" vivre
+                        生活節沙龍"在全球主要城市同步舉行,線上線下吸引百萬人觀看。
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="card" style="width: 18rem">
-            <img
-              src="../assets/images/cat.jpg"
-              class="card-img-top"
-              alt="cat"
-            />
-            <div class="card-body">
-              <h5 class="card-title">swiper4</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                odit, iusto odio assumenda alias id nobis earum!
+      </div>
+    </section>
+    <!-- future -->
+    <section class="py-c6 py-lg-c8">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <h3 class="text-neutral-500 fs-4 fs-lg-2 text-center mb-4 mb-lg-c5">
+              品牌願景
+            </h3>
+            <div class="px-c2 px-lg-c6">
+              <p class="text-neutral-400 mb-4 mb-lg-c5">
+                我們的目標不僅是為讀者提供高水準的內容，更希望能真正啟發和影響讀者的生活方式與價值觀,引領走向更有意義、品質與質感的生活體驗。我們相信,生活的意義不僅僅在於外在物質條件的滿足,更多的是一種心靈層面的追求,一種對美好事物的不懈向往。因此,vivre
+                的定位是成為啟迪現代人內在生活的引路人,給予靈感啟迪,引領讀者去體驗生活的真諦。
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card" style="width: 18rem">
-            <img
-              src="../assets/images/cat.jpg"
-              class="card-img-top"
-              alt="cat"
-            />
-            <div class="card-body">
-              <h5 class="card-title">swiper5</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                odit, iusto odio assumenda alias id nobis earum!
+              <p class="text-neutral-400">
+                我們衷心期盼，vivre
+                能為現代人的生活帶來無限靈感啟發,讓每個人的生活之路不僅優雅、從容,更有內在的意義與價值,豐富而燦爛。讓我們共同努力,將生活過得更有滋有味!期待您一同加入
+                vivre，攜手同行這段美妙的人生旅程。
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="swiper-next"></div>
-      <div class="swiper-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
